@@ -1,0 +1,82 @@
+<mat-toolbar>
+  <mat-toolbar-row class="justify-content-between">
+    <button mat-icon-button (click)="toggleSidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="row mr-2 ml-auto">
+      <ul class="row m-0 align-items-center">
+        <li>
+          <button
+            mat-button
+            [matMenuTriggerFor]="menu"
+            class="user mt-2 d-flex align-items-center"
+          >
+            <img src="https://as2.ftcdn.net/v2/jpg/01/70/00/23/1000_F_170002330_lhR5XYmIYiHW1vSq3TJMsr7S50qrJQQu.jpg" alt="" class="user-image mr-1 p-2" />
+
+            User Name
+            <mat-icon class="user-image-icon ml-1"
+              >keyboard_arrow_down</mat-icon
+            >
+          </button>
+          <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              Logout
+            </button>
+            <div class="row">
+              <div class="col">
+                <button mat-flat-button color="warn">B2</button>
+              </div>
+              <div class="col">English</div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button mat-flat-button color="warn">C1</button>
+              </div>
+              <div class="col">Spanish</div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+            <h5>Remainders</h5>
+            <div class="row">
+              <div class="col">
+                <mat-icon>mail</mat-icon>
+              </div>
+              <div class="col">
+                <p style="color:teal">English-Vocabulary Test</p>
+                <span style="color:rgb(22, 139, 22)">20 Dec 21</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <mat-icon>mail</mat-icon>
+              </div>
+              <div class="col">
+                <p style="color:teal">Spanish Test</p>
+                <span style="color:rgb(22, 139, 22)">22 Dec 21</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <mat-icon>mail</mat-icon>
+              </div>
+              <div class="col">
+                <p style="color:teal">Grammer Test</p>
+                <span style="color:rgb(22, 139, 22)">24 Dec 21</span>
+              </div>
+            </div>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
